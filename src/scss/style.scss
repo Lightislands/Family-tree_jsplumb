@@ -1,0 +1,207 @@
+@import "variables.scss";
+@import "normalize.scss";
+@import "materialize-min";
+@import "mixins.scss";
+@import "template.scss";
+@import "fonts.scss";
+@import "pell.scss";
+
+.hidden {display: none;}
+
+//============================================================= Controls
+.controls {
+  z-index: 40;
+  .save {
+    border: 1px solid $gray;
+    background-color: #fff;
+    color: $gray;
+    margin-right: auto;
+  }
+
+  .btn-spouse {
+    margin-right: 50px;
+  }
+}
+
+//============================================================= Item
+.item {
+  position: absolute;
+  border: 1px solid $gray;
+  background-color: $color-item;
+  width: 200px;
+  height: 70px;
+  z-index: 10;
+  @include border-radius(4px);
+
+  .photo {
+    height: 100%;
+    width: 70px;
+    float: left;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .no-photo {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 3px 0 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+
+    .maiden {
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 120px;
+    }
+  }
+
+  .remove, .edit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    visibility: hidden;
+    border: 1px solid $gray;
+    background-color: #fff;
+    @include border-radius(50%);
+    top: -15px;
+    i {
+      font-size: 18px;
+    }
+  }
+  .remove {
+    left: -20px;
+    i {
+      margin-top: 2px;
+    }
+  }
+  .edit {
+    right: -20px;
+  }
+  .connect {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    margin-left: -15px;
+    bottom: 0;
+    left: 50%;
+
+    &:after {
+      display: block;
+      content: '';
+      @include border-radius(50%);
+      width: 30px;
+      height: 30px;
+      margin-top: 25px;
+      border: 1px solid $gray;
+      background-color: $color-three;
+      cursor: pointer;
+    }
+  }
+
+  .clickArea {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    cursor: move;
+  }
+
+  .visible {
+    visibility: visible;
+  }
+}
+.spouse {
+  position: absolute;
+  border: 1px solid black;
+  width: 50px!important;
+  height: 50px!important;
+  @include border-radius(50%);
+}
+
+
+//============================================================= Connections
+circle {
+  fill: #fff;
+  stroke: gray;
+}
+
+svg {
+  z-index: 5;
+}
+
+
+//============================================================= Modals
+.modal {
+  max-width: 600px;
+
+  .modal-description {
+    padding: 20px 0;
+    margin-left: -.75rem
+  }
+}
+
+#edit-description {
+  display: none;
+}
+
+.pell-wrap {
+  margin-top: 40px;
+}
+
+//============================================================= Side Pannel
+// Side panel
+.sidenav {
+  .bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.5rem;
+
+    #upload-input {
+      display: none;
+    }
+  }
+}
+.sidenav-trigger {
+  margin: 10px;
+  color: $color-two;
+  i {
+    font-size: 3.5rem;
+  }
+}
+
+//============================================================= Other
+svg circle {
+  cursor: crosshair;
+}
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  margin: 8px 0 0 0;
+}
+.label {
+  width: 100%;
+  text-align: center;
+  float: left;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #b5b5b5;
+}

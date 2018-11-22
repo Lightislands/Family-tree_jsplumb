@@ -1,0 +1,33 @@
+<% var data = {
+title: "Some Title",
+author: "Author Name",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+
+<%= _.template(require('./../includes/sidenav.html'))(data) %>
+
+
+
+<!--<div class="panzoom">-->
+  <div id="main">
+    <div id="node-container" class="panzoom">
+    </div>
+  </div>
+<!--</div>-->
+
+<div class="controls">
+  <button id="save" class="btn-large waves-effect save">Save</button>
+  <button id="add-new-spouse" class="btn-floating btn-large waves-effect waves-light btn-spouse"><i class="material-icons">favorite_border</i></button><!-- device_hub -->
+  <button data-target="add-new-modal" class="modal-trigger btn-large waves-effect waves-light" id="add-new">New Node</button> <!-- <i class="material-icons">add</i> -->
+</div>
+<!-- Add new modal -->
+<%= _.template(require('./../includes/add-new-modal.html'))(data) %>
+<%= _.template(require('./../includes/edit-modal.html'))(data) %>
+<%= _.template(require('./../includes/confirm-modal.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
+
+<!--<script src="../src/js/panzoom.js"></script>-->
+
+<!--<script src="../src/js/jquery.mousewheel.js"></script>-->
