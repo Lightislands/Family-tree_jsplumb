@@ -1,21 +1,27 @@
 ﻿
-======= Materialize, SASS, ES6, lodash 
-<br />
-<p>Example - <a href="http://lightislands.com/tree/" target="_blank" /></p> 
-<br />
-
-Prod with Beauty html:
-npm run build-and-beautify
-
-Prod:
-npm run build
+# FamilyTree jsplumb - Materialize, SASS, ES6, lodash 
+<br /><br />
+<h2>Description</h2>
+<p>Example - <a href="http://lightislands.com/tree/" target="_blank" />http://lightislands.com/tree</p> 
+<br /><br />
+<img src="https://raw.githubusercontent.com/Lightislands/Family-tree_jsplumb/master/tree.jpg" alt="family tree" />
+<br /><br /><br />
 
 
-Watch:
-npm run watch
+<h2>Build project</h2>
+<ul>
+<li>Prod with Beauty html:<br />
+npm run build-and-beautify</li>
 
-Server + Watch:
-npm run start
+<li>Prod:<br />
+npm run build</li>
 
-Dev:
-npm run dev
+<li>Watch:<br />
+npm run watch</li>
+
+<li>Server + Watch:<br />
+npm run start</li>
+
+<li>Dev:<br />
+npm run dev</li>
+</ul>
