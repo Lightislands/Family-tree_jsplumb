@@ -1,8 +1,7 @@
 ﻿
 # FamilyTree jsplumb - Materialize, SASS, ES6, lodash 
-<br /><br />
-<h2>Description</h2>
-<p>Example - <a href="http://lightislands.com/tree/" target="_blank" />http://lightislands.com/tree</p> 
+<br />
+<p>Example - <a href="http://lightislands.com/tree/" target="_blank" />lightislands.com/tree</p> 
 <br /><br />
 <img src="https://raw.githubusercontent.com/Lightislands/Family-tree_jsplumb/master/tree.jpg" alt="family tree" />
 <br /><br /><br />
